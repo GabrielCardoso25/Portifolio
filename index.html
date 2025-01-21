@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Cardoso - Portfolio</title>
+
+  <!-- Fonte Ubuntu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Gabriel <span><a href="http://www.linkedin.com/in/gabriel-cardoso-107246242/">Cardoso</a></span></h1>
+      <p>Portifólio Estatístico e de Data Science</p>
+    </div>
+  </header>
+
+  <section class="about-me">
+    <div class="container">
+      <h2>Apresentação</h2>
+      <div class="about-me-content">
+        <img src="Eu_redondo.png" alt="Sua Foto" class="about-me-img">
+        <p>Sou Gabriel Cardoso, especialista em,<span class="text-highlight"> análise de dados</span> e <span class="text-highlight">projeções</span> em diferentes áreas do conhecimento, atualmente cursando mestrado em Ciência de Dados na Universidade Federal de Mato Grosso. Com formação em Estatística, tenho experiência no desenvolvimento de <span class="text-highlight">modelos analíticos e preditivos</span>, além de habilidades em <span class="text-highlight">R</span>,<span class="text-highlight"> Python</span>,<span class="text-highlight"> SQL</span> e <span class="text-highlight">Power BI</span>. Estou sempre em busca de novos desafios para expandir meu conhecimento e contribuir para a <span class="text-highlight">tomada de decisões estratégicas</span>.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="skills">
+    <div class="container">
+      <h2>Áreas de Conhecimento</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programação e Gerenciamento de Dados</h3>
+          <ul>
+            <li><b>R</b> -- Análise estatística avançada (Tidymodels, regressão logística, linear, árvores de decisão, ARIMA/SARIMA)</li>
+            <li><b>Python</b> -- Manipulação e visualização de dados (Pandas, Matplotlib) </li>
+            <li><b>SQL</b> -- Criação de consultas, manipulação de dados e relatórios. Experiência com bancos de dados relacionais (MySQL, PostgreSQL)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Modelagem Estatística e Preditiva</h3>
+          <ul>
+            <li><b>Modelos Estatísticos</b> -- Regressões (linear e logística), análise de variância (ANOVA), testes de hipóteses e clusterização (k-means)</li>
+            <li><b>Séries Temporais</b> -- Modelagem com ARIMA/SARIMA para previsões robustas</li>
+            <li><b>Redes Neurais</b> -- Criação e treinamento de modelos para reconhecimento de padrões complexos, previsão de tendências e suporte à tomada de decisões.</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Visualização e Comunicação de Dados</h3>
+          <ul>
+            <li><b>Power BI</b> -- Desenvolvimento de dashboards interativos para insights empresariais</li>
+            <li><b>Excel</b> -- Automação de tarefas e análises (Power Query, VBA)</li>
+            <li><b>Comunicação eficaz</b> -- Transformação de análises técnicas em relatórios claros e acionáveis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+        <h2 class="titulo-trabalhos"> <a>Meus Trabalhos</a></h2>
+      <div class="portfolio-slider">
+        <!-- Área visível do carrossel -->
+        <div class="portfolio-items">
+          <!-- Card 1 -->
+          <div class="portfolio-card">
+            <img src="rede.jpg" alt="Data Analysis Project">
+            <div class="portfolio-content">
+              <h3><a href="https://rpubs.com/Gabriel_Cardoso25/1241673" target="_blank">Aplicação de Redes Neurais com R</a></h3>
+              <p>Redes Neurais podem ser usadas para classificação de espécies de flores com base em características como comprimento e largura das pétalas e sépalas. </p>
+              <div class="tools">
+                <span>Redes Neurais</span>
+                <span>R</span>
+                <span>DataSet Iris</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="portfolio-card">
+            <img src="series.jpg" alt="Statistical Analysis">
+            <div class="portfolio-content">
+              <h3><a href="https://rpubs.com/Gabriel_Cardoso25/1114249" target="_blank">Análise de Séries Temporais com Modelo ARIMA</a></h3>
+              <p>Exploração do modelo ARIMA para previsão de séries temporais, demonstrando sua aplicação no conjunto de dados AirPassengers, analisando parâmetros, acurácia e previsões futuras.</p>
+              <div class="tools">
+                <span>Séries Temporais</span>
+                <span>Modelo ARIMA</span>
+                <span>Pacote Forecast</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="portfolio-card">
+            <img src="dash2.jpg" alt="Data Visualization">
+            <div class="portfolio-content">
+              <h3><a href="https://app.powerbi.com/view?r=eyJrIjoiMmMyOTZmZDctZTJiZi00NTc0LWE0MzAtODhmOWI2NDRjODg2IiwidCI6IjY3OTE5YWU2LTZhNGEtNGM0OS04NmY1LWQ5MzJhODA0YmM1ZSJ9" target="_blank">Dashboard de Venda no Power BI</a></h3>
+              <p>Explore nosso dashboard de vendas interativo! Visualize e analise os dados de desempenho de vendas de forma clara e dinâmica, ajudando a identificar tendências e tomar decisões informadas</p>
+              <div class="tools">
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>DAX</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Card 4 -->
+          <div class="portfolio-card">
+            <img src="cluster.png" alt="Data Science Project">
+            <div class="portfolio-content">
+              <h3><a href="https://rpubs.com/Gabriel_Cardoso25/1114495" target="_blank">Análise de Componentes Principais</a></h3>
+              <p>A Análise de Componentes Principais é uma técnica estatística essencial para reduzir a complexidade de grandes conjuntos de dados, mantendo as variáveis mais importantes.</p>
+              <div class="tools">
+                <span>PCA</span>
+                <span>R</span>
+                <span>Cluster</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="relatorio2.png" alt="Novo Projeto">
+            <div class="portfolio-content">
+              <h3><a href="https://rpubs.com/Gabriel_Cardoso25/1230653" target="_blank">Pacote Plotly</a></h3>
+              <p>A biblioteca de gráficos Plotly para o R permite criar gráficos interativos de alta qualidade, adequados para publicação, com ela você pode produzir diversos tipos de visualizações.</p>
+              <div class="tools">
+                <span>Plotly</span>
+                <span>Visuais Interativos</span>
+                <span>Relatórios Personalizados</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+  
+        <!-- Botões de navegação -->
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  
+ 
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <a href="https://wa.me/65984361881" target="_blank">
+        <img src="whatsapp-svgrepo-com.svg" alt="WhatsApp" width="24" height="24">
+        WhatsApp
+      </a>
+    <a href="http://www.linkedin.com/in/gabriel-cardoso-107246242/" target="_blank">
+      <img src="icons8-linkedin.svg" alt="WhatsApp" width="24" height="24">
+      Linkedin
+    </a>
+      <a href="mailto:gabriel.cardoso9811@gmail.com" class="email-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Gabriel Cardoso. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

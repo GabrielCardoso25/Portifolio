@@ -1,0 +1,489 @@
+/* Base styles */
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --white: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Ubuntu', -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Typography */
+  h1, h2, h3,p {
+    line-height: 1.2;
+    font-family: 'Ubuntu', sans-serif; 
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h1 span {
+    color: var(--primary);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .portfolio h2 {
+    color: var(--text); /* Inherit from body color by default */
+  }
+  
+  /* Hero section */
+  .hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+    background: url('as4.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 4rem; /* Adiciona espaçamento interno */
+  }
+  
+  .hero .container {
+    max-width: 600px; /* Limita a largura do texto */
+    margin-left: 0; /* Garante que o contêiner fique à esquerda */
+    text-align: left; /* Certifica-se de que o texto do contêiner esteja alinhado à esquerda */
+  }
+  
+  .hero h1 {
+    font-size: 4.5rem; /* Ajusta o tamanho do título */
+    margin-bottom: 1rem;
+    color: var(--white);
+  }
+  
+  .hero h1 span {
+    color: #007bff; /* Destaca parte do nome */
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+  }
+  .hero h1 span:hover {
+    color: #007bff; /* Cor de destaque ao passar o mouse */
+    transform: scale(1.2); /* Aumenta mais o tamanho do texto */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4); /* Sombra mais forte e intensa */
+  }
+  
+  .hero p {
+    font-size: 1.9rem;
+    color: var(--white);
+  }
+  .hero h1 span a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+  }
+  
+  
+  /* Portfolio section */
+  .portfolio {
+    padding: 5rem 0;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .portfolio-card {
+    background: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+  
+  .portfolio-content {
+    padding: 1.5rem;
+  }
+  
+  .portfolio-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  
+  .portfolio-content p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+  
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tools span {
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    color: var(--text);
+  }
+  
+  /* Skills section */
+  .skills {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+  }
+  
+  .skill-category {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-category h3 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+  }
+  
+  .skill-category li {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  
+  /* Contact section */
+  .contact {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .email-link:hover {
+    color: var(--primary-dark);
+  }
+  
+  .email-link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem 0;
+    background-color: var(--bg-light);
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+    }
+    
+    .portfolio-grid,
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* About Me section */
+.about-me {
+    padding: 5rem 0;
+  }
+  
+  .about-me h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-me-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+  
+  .about-me-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary);
+  }
+  
+  .about-me p {
+    max-width: 800px;
+    font-size: 1.35rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+  }
+  
+/* Supondo que a classe do h2 seja "titulo-trabalhos" */
+.titulo-trabalhos {
+    /* ... outros estilos */
+    border-bottom: none; /* Remove a borda inferior */
+  }
+/*-------------------------------------------------------------------------*/
+/* Portfolio section styles */
+.portfolio {
+  padding: 5rem 0;
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+.portfolio-slider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.portfolio-items {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 1rem 0;
+  will-change: transform;
+}
+
+.portfolio-card {
+  flex: 0 0 calc(33.333% - 1.33rem);
+  min-width: 300px;
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.6;
+  transform: scale(0.95);
+  filter: blur(2px);
+}
+
+.portfolio-card.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-content {
+  padding: 1.5rem;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-content {
+  transform: translateY(-5px);
+}
+
+.portfolio-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-content h3 {
+  color: var(--primary);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tools span {
+  background-color: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  color: var(--text);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.portfolio-card:hover .tools span {
+  transform: translateY(-2px);
+}
+
+.tools span:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(79, 70, 229, 0.2);
+}
+
+/* Carousel Navigation */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.carousel-button:not(:disabled):hover {
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 8px 16px rgba(79, 70, 229, 0.25);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button:disabled {
+  background-color: #e5e7eb;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-button.prev {
+  left: -8px;
+}
+
+.carousel-button.next {
+  right: -8px;
+}
+
+/* Add smooth transition for button states */
+.carousel-button:disabled,
+.carousel-button:not(:disabled) {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+  .portfolio-slider {
+    padding: 0 1rem;
+  }
+  
+  .portfolio-card {
+    flex: 0 0 calc(100% - 2rem);
+  }
+  
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
+}
+
+/* Remove underline and improve link appearance */
+.portfolio-content h3 a {
+  text-decoration: none;
+  color: #333; /* Use a color that fits your theme */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Add hover effect for the links */
+.portfolio-content h3 a:hover {
+  color: #007bff; /* Adjust hover color as per your theme */
+}
+
+.text-highlight {
+  color: var(--primary);
+  font-weight: bold; /* Opcional: deixa o texto mais destacado */
+}
+
+.email-link, .contact a {
+  display: inline-flex;
+  align-items:center;
+  gap: 1rem;
+  color: var(--highlight);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: var(--black);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
